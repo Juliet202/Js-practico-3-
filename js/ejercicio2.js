@@ -1,9 +1,9 @@
-var miArray=new Array();
+let miArray=[];
  
 // bucle del 1 al 5
-for(var i=0;i<=10 ;i++)
-{
-    var name = prompt("Introduce un numero");
-    miArray.push(name);
+do{
+    let textoIngresado = prompt('Ingrese una palabra');
+    miArray.push(textoIngresado);
 }
+while (confirm('Quiere ingresar otra palabra?'));
 document.write(miArray);
