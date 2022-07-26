@@ -15,8 +15,8 @@ miArray.push('paris');
 document.write(miArray);
 
 document.write('<br></br>');
-document.write(miArray[0]);
-document.write(miArray[2]);
+miArray.splice(1,1,'barcelona');
+document.write(miArray);
 
 
 

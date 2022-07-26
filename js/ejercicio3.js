@@ -15,3 +15,29 @@ document.write('<br>Resultado de las pruebaDado1: '+pruebaDado1);
 document.write('<br>Resultado de las pruebaDado2: '+pruebaDado2);
 document.write('<br>Resultado de las sumas: '+sumas);
 
+document.write(`<table>
+<thead>
+    <tr>
+        <th>Resultado</th>
+        <th>Frecuencia</th>
+    </tr>
+</thead>
+<tbody>`);
+
+for(let i = 2; i <= 12; i++){
+    document.write(`<tr>`);
+    //recorrer el arreglo de sumas y verificar cuantas veces aparece el valor que esta en la variable i, por ej i=2;
+    let contador = 0;
+    for(let posicion = 0; posicion < sumas.length; posicion++){
+        if( i === sumas[posicion]){
+            //contar cuantas veces aparecio x valor
+            contador++;
+        }
+    }
+    document.write(`<td>${i}</td><td>${contador}</td>`);
+    document.write(`</tr>`);
+}
+document.write(`</tbody></table>`);
+
+
+
